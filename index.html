@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cinematic Trivia Game</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Custom styles for this template -->
+<!--    <link href="jumbotron-narrow.css" rel="stylesheet">-->
+
+  </head>
+
+  <body>
+  
+    
+    <div class="biggest container">
+      <div class="header">
+        <h1 class="text-muted">Cinematic Screencap Trivia</h1>
+      </div>
+      <div class="bigger container">
+        <div class="container">
+        <div id="game">
+          <h2 style="display:hide" id="instructions">Guess the Movie! In 10 seconds. Don't guess wrong. You got this.</h2>
+          <img id="higuys" style="display:none" src="./assets/images/fixed.png" alt="Hi guys">
+          <p id="remaining-time" class="lead">Seconds before imminent doom: <span id="timer"></span></p>
+          <p id="question" class="lead"></p>
+        </div>
+        <div id="results">
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="choices" class="text-center">
+          <button id="start" class="btn">Start Game</button>
+          <div id="options">
+            
+          </div>
+          
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <!-- TRIVIA APP JS -->
+    <script src="./assets/javascript/app.js"></script>  
+
+
+  </body>
+</html>

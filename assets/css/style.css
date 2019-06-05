@@ -1,0 +1,52 @@
+body{
+	text-align: center;
+}
+
+.text-muted{
+    color:goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5 em;
+    margin: 10px auto;
+}
+.last-seconds{
+  color: red;
+}
+.option{
+  margin: 15px;
+}   
+
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5em;
+  color: #001f3f;
+}
+
+h2{
+  margin: 5px auto;
+  position: relative;
+  top: 40px;
+  font-size: 1.2em;
+}
+
+#higuys{
+  margin: 5px auto;
+  background: none;
+}
+
+.lead{
+  font-size: 1.2em;
+}
+
+#start{
+  color: white;
+  background-color: black;
+  border-color: white;
+  border: none;
+  position: relative;
+  bottom: 119px;
+}
+
+#start:hover{
+  background-color: maroon;
+  transform: scale(1.1);
+}
