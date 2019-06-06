@@ -155,7 +155,7 @@ var trivia = {
       $('.start').show();
 
       //press me again baby
-      $('#deadpool').html("<img style='max-width: 960px; height: auto;' src='./assets/images/thanks.jpg'>");
+      $('#deadpool').html("<img style='width: 100%; height: auto;' src='./assets/images/thanks.jpg'>");
       $('.start').attr('id', "heart");
       $('#deadpool').show();
     }
