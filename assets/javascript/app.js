@@ -19,16 +19,16 @@ var trivia = {
   timerId : '',
   // questions options and answers data
   questions: {
-    q1: '<img style="max-width: 960px; height: auto;" src="./assets/images/americanmade.jpg">',
-    q2: '<img style="max-width: 960px; height: auto;" src="./assets/images/aquaman.jpg">',
-    q3: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengers.jpeg">',
-    q4: '<img style="max-width: 960px; height: auto;" src="./assets/images/blackpanther.jpg">',
-    q5: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengersinfinitywar.jpg">',
-    q6: '<img style="max-width: 960px; height: auto;" src="./assets/images/babydriver.jpg">',
-    q7: '<img style="max-width: 960px; height: auto;" src="./assets/images/batmanvsuperman.jpg">',
-    q8: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengersageofultron.jpg">',
-    q9: '<img style="max-width: 960px; height: auto;" src="./assets/images/bladerunner20492.jpg">',
-    q10: '<img style="max-width: 960px; height: auto;" src="./assets/images/deadpool.jpg">',
+    q1: '<img style="width: 100%; height: auto;" src="./assets/images/americanmade.jpg">',
+    q2: '<img style="width: 100%; height: auto;" src="./assets/images/aquaman.jpg">',
+    q3: '<img style="width: 100%; height: auto;" src="./assets/images/avengers.jpeg">',
+    q4: '<img style="width: 100%; height: auto;" src="./assets/images/blackpanther.jpg">',
+    q5: '<img style="width: 100%; height: auto;" src="./assets/images/avengersinfinitywar.jpg">',
+    q6: '<img style="width: 100%; height: auto;" src="./assets/images/babydriver.jpg">',
+    q7: '<img style="width: 100%; height: auto;" src="./assets/images/batmanvsuperman.jpg">',
+    q8: '<img style="width: 100%; height: auto;" src="./assets/images/avengersageofultron.jpg">',
+    q9: '<img style="width: 100%; height: auto;" src="./assets/images/bladerunner20492.jpg">',
+    q10: '<img style="width: 100%; height: auto;" src="./assets/images/deadpool.jpg">',
 
   },
   options: {
@@ -173,7 +173,7 @@ var trivia = {
     // if the text of the option picked matches the answer of the current question, increment correct
     if($(this).text() === currentAnswer){
       // turn button green for correct
-      $(this).addClass('btn-success').removeClass('btn-info');
+      $(this).addClass('btn-yay').removeClass('btn-info');
       
       trivia.correct++;
       clearInterval(trivia.timerId);
@@ -183,7 +183,7 @@ var trivia = {
     // else the user picked the wrong option, increment incorrect
     else{
       // turn button clicked red for incorrect
-      $(this).addClass('btn-danger').removeClass('btn-info');
+      $(this).addClass('btn-boo').removeClass('btn-info');
       
       trivia.incorrect++;
       clearInterval(trivia.timerId);
