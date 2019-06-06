@@ -141,10 +141,10 @@ var trivia = {
       
       // adds results of game (correct, incorrect, unanswered) to the page
       $('#results')
-        .html('<h3>Look you finished! I knew you could do it.</h3>'+
+        .html('<h3>Look at you, you finished! I knew you could do it.</h3>'+
         '<p>Correct: '+ trivia.correct +'</p>'+
-        '<p>Incorrect: '+ trivia.incorrect +'</p>'+
-        '<p>Unaswered: '+ trivia.unanswered +'</p>'+
+        '<p> Incorrect: '+ trivia.incorrect +'</p>'+
+        '<p> Unaswered: '+ trivia.unanswered +'</p>'+
         '<p>Now press that button again. You know you want to.</p>');
       
       // hide game sction
@@ -152,6 +152,9 @@ var trivia = {
       
       // show start button to begin a new game
       $('#start').show();
+
+      //press me again baby
+      $('#deadpool').html("<img src='./assets/images/thanks.jpg'>")
     }
     
   },
@@ -182,7 +185,7 @@ var trivia = {
       trivia.incorrect++;
       clearInterval(trivia.timerId);
       resultId = setTimeout(trivia.guessResult, 3000);
-      $('#results').html("<h3>Wrong! You hear that often, don't you? The answer was " + currentAnswer +' cow.</h3>');
+      $('#results').html("<h3>Wrong! You hear that often, don't you? The answer was " + currentAnswer +' moron.</h3>');
     }
     
   },

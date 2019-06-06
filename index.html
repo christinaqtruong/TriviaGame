@@ -9,8 +9,6 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Custom styles for this template -->
-<!--    <link href="jumbotron-narrow.css" rel="stylesheet">-->
 
   </head>
 
@@ -24,18 +22,19 @@
       <div class="bigger container">
         <div class="container">
         <div id="game">
-          <h2 style="display:hide" id="instructions">Guess the Movie! In 10 seconds. Don't guess wrong. You got this.</h2>
+          <h2 style="display:hide" id="instructions">Name the Movie! In 10 seconds. Don't guess wrong. You got this.</h2>
           <img id="higuys" style="display:none" src="./assets/images/fixed.png" alt="Hi guys">
-          <p id="remaining-time" class="lead">Seconds before imminent doom: <span id="timer"></span></p>
-          <p id="question" class="lead"></p>
+          <p id="remaining-time" class="lead">Time left on this time bomb: <span id="timer"></span></p>
+          <div id="question" class="lead"></div>
         </div>
         <div id="results">
         </div>
+        <div id="deadpool"></div>
       </div>
 
       <div class="row">
         <div id="choices" class="text-center">
-          <button id="start" class="btn">Start Game</button>
+          <button id="start" class="btn">Press me</button>
           <div id="options">
             
           </div>
