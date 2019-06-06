@@ -19,16 +19,16 @@ var trivia = {
   timerId : '',
   // questions options and answers data
   questions: {
-    q1: '<img style="width: 100%; height: auto;" src="./assets/images/americanmade.jpg">',
-    q2: '<img style="width: 100%; height: auto;" src="./assets/images/aquaman.jpg">',
-    q3: '<img style="width: 100%; height: auto;" src="./assets/images/avengers.jpeg">',
-    q4: '<img style="width: 100%; height: auto;" src="./assets/images/blackpanther.jpg">',
-    q5: '<img style="width: 100%; height: auto;" src="./assets/images/avengersinfinitywar.jpg">',
-    q6: '<img style="width: 100%; height: auto;" src="./assets/images/babydriver.jpg">',
-    q7: '<img style="width: 100%; height: auto;" src="./assets/images/batmanvsuperman.jpg">',
-    q8: '<img style="width: 100%; height: auto;" src="./assets/images/avengersageofultron.jpg">',
-    q9: '<img style="width: 100%; height: auto;" src="./assets/images/bladerunner20492.jpg">',
-    q10: '<img style="width: 100%; height: auto;" src="./assets/images/deadpool.jpg">',
+    q1: '<img style="max-width: 960px; height: auto;" src="./assets/images/americanmade.jpg">',
+    q2: '<img style="max-width: 960px; height: auto;" src="./assets/images/aquaman.jpg">',
+    q3: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengers.jpeg">',
+    q4: '<img style="max-width: 960px; height: auto;" src="./assets/images/blackpanther.jpg">',
+    q5: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengersinfinitywar.jpg">',
+    q6: '<img style="max-width: 960px; height: auto;" src="./assets/images/babydriver.jpg">',
+    q7: '<img style="max-width: 960px; height: auto;" src="./assets/images/batmanvsuperman.jpg">',
+    q8: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengersageofultron.jpg">',
+    q9: '<img style="max-width: 960px; height: auto;" src="./assets/images/bladerunner20492.jpg">',
+    q10: '<img style="max-width: 960px; height: auto;" src="./assets/images/deadpool.jpg">',
 
   },
   options: {
