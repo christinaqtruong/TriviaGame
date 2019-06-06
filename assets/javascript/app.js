@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   // event listeners
   $("#remaining-time").hide();
-  $("#start").on('click', trivia.startGame);
+  $(".start").on('click', trivia.startGame);
   $(document).on('click' , '.option', trivia.guessChecker);
   $('#higuys').show();
   $('#instructions').show();
@@ -19,16 +19,16 @@ var trivia = {
   timerId : '',
   // questions options and answers data
   questions: {
-    q1: '<img src="./assets/images/americanmade.jpg">',
-    q2: '<img src="./assets/images/aquaman.jpg">',
-    q3: '<img src="./assets/images/avengers.jpeg">',
-    q4: '<img src="./assets/images/blackpanther.jpg">',
-    q5: '<img src="./assets/images/avengersinfinitywar.jpg">',
-    q6: '<img src="./assets/images/babydriver.jpg">',
-    q7: '<img src="./assets/images/batmanvsuperman.jpg">',
-    q8: '<img src="./assets/images/avengersageofultron.jpg">',
-    q9: '<img src="./assets/images/bladerunner20492.jpg">',
-    q10: '<img src="./assets/images/deadpool.jpg">',
+    q1: '<img style="max-width: 960px; height: auto;" src="./assets/images/americanmade.jpg">',
+    q2: '<img style="max-width: 960px; height: auto;" src="./assets/images/aquaman.jpg">',
+    q3: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengers.jpeg">',
+    q4: '<img style="max-width: 960px; height: auto;" src="./assets/images/blackpanther.jpg">',
+    q5: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengersinfinitywar.jpg">',
+    q6: '<img style="max-width: 960px; height: auto;" src="./assets/images/babydriver.jpg">',
+    q7: '<img style="max-width: 960px; height: auto;" src="./assets/images/batmanvsuperman.jpg">',
+    q8: '<img style="max-width: 960px; height: auto;" src="./assets/images/avengersageofultron.jpg">',
+    q9: '<img style="max-width: 960px; height: auto;" src="./assets/images/bladerunner20492.jpg">',
+    q10: '<img style="max-width: 960px; height: auto;" src="./assets/images/deadpool.jpg">',
 
   },
   options: {
@@ -75,7 +75,7 @@ var trivia = {
     $('#timer').text(trivia.timer);
     
     // remove start button
-    $('#start').hide();
+    $('.start').hide();
 
     $('#remaining-time').show();
     
@@ -114,6 +114,7 @@ var trivia = {
     //hide Deadpool and his instructions
     $('#higuys').hide();
     $('#instructions').hide();
+    $('#deadpool').hide();
 
     })
     
@@ -151,10 +152,12 @@ var trivia = {
       $('#game').hide();
       
       // show start button to begin a new game
-      $('#start').show();
+      $('.start').show();
 
       //press me again baby
-      $('#deadpool').html("<img src='./assets/images/thanks.jpg'>")
+      $('#deadpool').html("<img style='max-width: 960px; height: auto;' src='./assets/images/thanks.jpg'>");
+      $('.start').attr('id', "heart");
+      $('#deadpool').show();
     }
     
   },

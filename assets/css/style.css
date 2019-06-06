@@ -30,6 +30,10 @@ h2{
   font-size: 1.2em;
 }
 
+img {
+  margin: 0 auto;
+}
+
 #higuys{
   margin: 5px auto;
   background: none;
@@ -39,7 +43,7 @@ h2{
   font-size: 1.2em;
 }
 
-#start{
+.start{
   color: white;
   background-color: black;
   border-color: white;
@@ -48,8 +52,33 @@ h2{
   bottom: 100px;
 }
 
-#start:hover{
+.start:hover{
   background-color: maroon;
   transform: scale(1.1);
 }
 
+#heart{
+  color: white;
+  background-color: black;
+  border-color: white;
+  border: none;
+  position: relative;
+  bottom: 200px;
+  right: 27px;
+}
+
+@media only screen and (max-width: 786px) {
+  #heart {
+    color: white;
+    background-color: black;
+    border-color: white;
+    border: none;
+    position: relative;
+    bottom: 200px;
+    right: -60px;
+  }
+
+  #question {
+    margin: 0 auto;
+  }
+}
